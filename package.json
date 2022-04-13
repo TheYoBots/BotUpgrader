@@ -1,0 +1,33 @@
+{
+  "name": "bot-upgrader",
+  "version": "0.0.1",
+  "description": "Lichess ouath app to upgrade an account to a bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheYoBots/BotUpgrader.git"
+  },
+  "keywords": [
+    "lichess",
+    "bot",
+    "lichess-bot",
+    "pkce",
+    "oauth"
+  ],
+  "author": "Yohaan Nathan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheYoBots/BotUpgrader/issues"
+  },
+  "homepage": "https://github.com/TheYoBots/BotUpgrader#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "node-fetch": "^2.6.1",
+    "passport": "^0.5.2",
+    "passport-lichess": "^2.0.0"
+  }
+}
