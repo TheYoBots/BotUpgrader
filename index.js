@@ -37,7 +37,7 @@ app.get('/auth/lichess/callback',
 
 app.get('/', (_req, res) => res.send(`<a href='/auth/lichess'>Login with Lichess</a>`));
 app.get('/bot', (req, res) => res.send(`Hello <a href='https://lichess.org/@/${req.user.username}'>${req.user.username}</a> <br><br><a href='/bot/upgrade'>Upgrade to a bot account</a> <b>(This is irreversible!)<b>`));
-app.get('/fail', (_req, res) => res.send('Authentication failed'));
+app.get('/fail', (_req, res) => res.send(`Authentication failed <br><br><a href='/auth/lichess'>Retry</a>`));
 
 app.get('/bot/upgrade', (req, res) => {	
 	fetch('https://lichess.org/api/bot/account/upgrade', {
